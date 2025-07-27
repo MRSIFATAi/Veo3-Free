@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Studio - Create Amazing Videos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Adsterra Ad Script -->
+    <script async="async" data-cfasync="false" src="//pl27271862.profitableratecpm.com/37a5cf5930a3e1831e13b88f3bc4b754/invoke.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-video"></i> AI Video Studio</h1>
+            <p class="subtitle">Transform your imagination into stunning videos with cutting-edge AI</p>
+            <div class="features">
+                <span class="feature-badge"><i class="fas fa-magic"></i> AI-Powered</span>
+                <span class="feature-badge"><i class="fas fa-hd-video"></i> 4K Quality</span>
+                <span class="feature-badge"><i class="fas fa-bolt"></i> Lightning Fast</span>
+                <span class="feature-badge"><i class="fas fa-palette"></i> Multiple Styles</span>
+            </div>
+        </header>
+
+        <!-- Top Banner Ad -->
+        <div class="ad-container top-banner">
+            <div id="container-37a5cf5930a3e1831e13b88f3bc4b754"></div>
+        </div>
+
+        <main class="main-content">
+            <section class="form-panel">
+                <h2 class="panel-title">
+                    <i class="fas fa-cog"></i>
+                    Video Configuration
+                </h2>
+                
+                <form id="videoForm">
+                    <div class="form-group">
+                        <label for="prompt">
+                            <i class="fas fa-pen-fancy"></i> Describe Your Video
+                        </label>
+                        <textarea 
+                            id="prompt" 
+                            class="form-control textarea" 
+                            placeholder="Enter a detailed description of your video... (e.g., 'A majestic dragon soaring over snow-capped mountains at sunset, with cinematic lighting and epic music')"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="duration">
+                                <i class="fas fa-clock"></i> Duration
+                            </label>
+                            <select id="duration" class="form-control">
+                                <option value="5">5 seconds</option>
+                                <option value="10" selected>10 seconds</option>
+                                <option value="15">15 seconds</option>
+                                <option value="30">30 seconds</option>
+                                <option value="60">1 minute</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="style">
+                                <i class="fas fa-brush"></i> Style
+                            </label>
+                            <select id="style" class="form-control">
+                                <option value="realistic">Photorealistic</option>
+                                <option value="cinematic" selected>Cinematic</option>
+                                <option value="animated">3D Animated</option>
+                                <option value="cartoon">Cartoon</option>
+                                <option value="artistic">Artistic</option>
+                                <option value="anime">Anime</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="resolution">
+                                <i class="fas fa-expand"></i> Resolution
+                            </label>
+                            <select id="resolution" class="form-control">
+                                <option value="720p">720p HD</option>
+                                <option value="1080p" selected>1080p Full HD</option>
+                                <option value="4k">4K Ultra HD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fps">
+                                <i class="fas fa-tachometer-alt"></i> Frame Rate
+                            </label>
+                            <select id="fps" class="form-control">
+                                <option value="24">24 FPS (Cinematic)</option>
+                                <option value="30" selected>30 FPS (Standard)</option>
+                                <option value="60">60 FPS (Smooth)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="settings-panel">
+                        <div class="settings-title">
+                            <i class="fas fa-sliders-h"></i> Advanced Options
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="enhanceQuality" checked>
+                                <span>AI Quality Enhancement</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="addMusic">
+                                <span>Auto-generate Background Music</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="stabilization" checked>
+                                <span>Video Stabilization</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="generateBtn">
+                        <i class="fas fa-magic"></i>
+                        <span class="btn-text">Generate Video</span>
+                        <div class="loading-spinner" id="loadingSpinner" style="display: none;"></div>
+                    </button>
+
+                    <div class="progress-bar" id="progressBar" style="display: none;">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </form>
+
+                <!-- Side Ad -->
+                <div class="ad-container side-ad">
+                    <script async="async" data-cfasync="false" src="//pl27271862.profitableratecpm.com/37a5cf5930a3e1831e13b88f3bc4b754/invoke.js"></script>
+                    <div id="container-37a5cf5930a3e1831e13b88f3bc4b754"></div>
+                </div>
+            </section>
+
+            <section class="preview-panel">
+                <h2 class="panel-title">
+                    <i class="fas fa-play-circle"></i>
+                    Preview & Download
+                </h2>
+
+                <div class="preview-container" id="previewContainer">
+                    <div class="preview-placeholder" id="placeholder">
+                        <i class="fas fa-film"></i>
+                        <div>Your generated video will appear here</div>
+                        <small>Start by describing your video idea</small>
+                    </div>
+                </div>
+
+                <div class="action-buttons" id="actionButtons" style="display: none;">
+                    <button class="btn-secondary" id="downloadBtn">
+                        <i class="fas fa-download"></i>
+                        Download HD
+                    </button>
+                    <button class="btn-secondary" id="shareBtn">
+                        <i class="fas fa-share-alt"></i>
+                        Share
+                    </button>
+                    <button class="btn-secondary" id="regenerateBtn">
+                        <i class="fas fa-redo"></i>
+                        Regenerate
+                    </button>
+                </div>
+
+                <div class="status-bar" id="statusBar"></div>
+            </section>
+        </main>
+
+        <!-- Bottom Banner Ad -->
+        <div class="ad-container bottom-banner">
+            <script async="async" data-cfasync="false" src="//pl27271862.profitableratecpm.com/37a5cf5930a3e1831e13b88f3bc4b754/invoke.js"></script>
+            <div id="container-37a5cf5930a3e1831e13b88f3bc4b754"></div>
+        </div>
+
+        <!-- Footer Ad -->
+        <footer class="footer">
+            <div class="ad-container footer-ad">
+                <script async="async" data-cfasync="false" src="//pl27271862.profitableratecpm.com/37a5cf5930a3e1831e13b88f3bc4b754/invoke.js"></script>
+                <div id="container-37a5cf5930a3e1831e13b88f3bc4b754"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
